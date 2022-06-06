@@ -27,7 +27,7 @@ kubectl create ns "$COVERITY_NS" || true
 helm upgrade --install "cim-pg" postgresql \
   --repo https://charts.bitnami.com/bitnami \
   --namespace "$COVERITY_NS" \
-  --version "10.13.11" \
+  --version "10.16.2" \
   --set metrics.enabled=true \
   --set postgresqlDatabase=cim \
   -f postgres-values.yaml
